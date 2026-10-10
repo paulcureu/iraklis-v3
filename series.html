@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Iraklis — Sculptor in marble &amp; stone</title>
+  <meta name="description" content="A series of works by Iraklis, sculptor in marble and stone on Mount Athos.">
+  <meta name="theme-color" content="#EDE3D1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Iraklis — Sculptor in marble &amp; stone">
+  <meta property="og:description" content="A series of works by Iraklis, sculptor in marble and stone on Mount Athos.">
+  <meta property="og:image" content="assets/img/site/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/cinzel-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="series">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="topbar" aria-hidden="true"></div>
+    <div class="site-header__bar">
+      <nav class="nav" aria-label="Main"><a href="works.html" aria-current="page"><span class="u">Works</span></a><a href="index.html#about"><span class="u">About</span></a></nav>
+      <a class="brand" href="index.html" aria-label="Iraklis — home"><span class="brand__name">IRAKLIS</span><span class="brand__sub">Sculptor · Mount Athos</span></a>
+      <div class="header-right">
+        <nav class="nav" aria-label="Contact"><a href="contact.html"><span class="u">Contact</span></a></nav>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"><span class="menu-btn__label">Menu</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+    <div class="site-header__rule"><div class="rule " aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l7 7-7 7-7-7z" fill="none" stroke="#B58A3E"/><circle cx="8" cy="8" r="2" fill="#B58A3E"/></svg></div></div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="none" stroke="#B58A3E"/><circle cx="22" cy="22" r="14" fill="none" stroke="#B58A3E"/><path d="M22 8v28M8 22h28" stroke="#B58A3E"/><path d="M12.1 12.1l19.8 19.8M31.9 12.1L12.1 31.9" stroke="#B58A3E" stroke-width=".6"/></svg>
+    <nav aria-label="Mobile">
+      <a href="works.html" aria-current="page">Works</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="rule rule--gold rule--short" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l7 7-7 7-7-7z" fill="none" stroke="#B58A3E"/><circle cx="8" cy="8" r="2" fill="#B58A3E"/></svg></div>
+    <div class="mobile-menu__foot">
+      <a href="mailto:narikaleli1@gmail.com">narikaleli1@gmail.com</a>
+      <a href="tel:+306975421099">+30 697 542 1099</a>
+      <span>Mount Athos, Greece</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="series-head">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="works.html"><span class="u">Works</span></a>
+        <span aria-hidden="true">·</span>
+        <span aria-current="page" id="s-crumb"></span>
+      </nav>
+      <p class="eyebrow rise" id="s-num"></p>
+      <h1 class="rise d1" id="s-title"></h1>
+      <p class="place rise d2" id="s-place"></p>
+      <div class="rule rule--gold rule--short" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l7 7-7 7-7-7z" fill="none" stroke="#B58A3E"/><circle cx="8" cy="8" r="2" fill="#B58A3E"/></svg></div>
+      <dl class="placard" id="s-placard"></dl>
+      <p class="series-description" id="s-description" hidden></p>
+    </section>
+
+    <section class="series-triptych" aria-label="Main photographs">
+      <div class="triptych triptych--plates rise d3" id="s-triptych"></div>
+    </section>
+
+    <section class="plates-band" id="s-plates-band" hidden>
+      <div class="plates-band__inner">
+        <div class="head" data-reveal>
+          <p class="eyebrow">Plates</p>
+          <h2 class="h2" id="s-plates-title"></h2>
+        </div>
+        <div class="masonry" id="s-plates"></div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="More series" id="s-pager"></nav>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photograph viewer">
+    <div class="lightbox__top">
+      <span class="caps" id="lb-title"></span>
+      <button class="lb-btn" type="button" data-lb="close" aria-label="Close viewer">Close <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 2l12 12M14 2L2 14"/></svg></button>
+    </div>
+    <div class="lightbox__stage" id="lb-stage">
+      <button class="lb-btn lb-prev" type="button" data-lb="prev" aria-label="Previous photograph"><svg width="28" height="10" viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M28 5H2M6 1L2 5l4 4"/></svg></button>
+      <img id="lb-img" alt="">
+      <button class="lb-btn lb-next" type="button" data-lb="next" aria-label="Next photograph"><svg width="28" height="10" viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></button>
+    </div>
+    <div class="lightbox__bottom">
+      <span class="caps" id="lb-count"></span>
+      <span class="caps lightbox__hint">Swipe or use the arrow keys</span>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <svg class="mosaic" aria-hidden="true"><defs><pattern id="mzF" width="28" height="14" patternUnits="userSpaceOnUse"><path d="M14 1.5l5.5 5.5-5.5 5.5-5.5-5.5z" fill="none" stroke="#B58A3E" stroke-width="1"/><circle cx="0" cy="7" r="1.4" fill="#B58A3E"/><circle cx="28" cy="7" r="1.4" fill="#B58A3E"/></pattern></defs><rect width="100%" height="14" fill="url(#mzF)"/></svg>
+    <div class="site-footer__inner">
+      <span class="brand__name">IRAKLIS</span>
+      <span class="site-footer__tag">Sculpting eternity in stone.</span>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="works.html"><span class="u">Works</span></a>
+        <a href="index.html#about"><span class="u">About</span></a>
+        <a href="contact.html"><span class="u">Contact</span></a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:narikaleli1@gmail.com">narikaleli1@gmail.com</a>
+        <a href="tel:+306975421099">+30 697 542 1099</a>
+        <span>Mount Athos, Greece</span>
+      </div>
+      <p class="site-footer__bottom">© <span data-year>2026</span> Iraklis. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
